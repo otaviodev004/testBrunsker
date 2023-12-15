@@ -1,0 +1,488 @@
+/* ESTILO GERAL */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lexend Deca', sans-serif;
+    font-family: 'Oswald', sans-serif;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+/* deixando o scroll suavisado */
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: #F7F7F7;
+    height: 100vh;
+}
+
+.flex{
+    display: flex;
+}
+
+.btn-cliente button{
+    padding: 10px 40px;
+    font-size: 18px;
+    font-weight: 400;
+    background-color: #FFD700;
+    /* tirando as bordas */
+    border: 0;
+    /* deixando as bordas arredondadas */
+    border-radius: 30px;
+    /* mudança de cursos */
+    cursor: pointer;
+    transition: .2s;
+}
+
+button:hover, form .btn-enviar input:hover{
+    box-shadow: 0px 0px 8px #917800;
+    transform: scale(1.05)
+}
+
+h2.titulo{
+    color: #FFD700;
+    font-size: 40px;
+    text-align: center;
+}
+
+h2.titulo span{
+    color: #333333;
+}
+
+/* .. */
+/* .. */
+/* .. */
+/* CABEÇALHO DO SITE */
+header{
+    padding: 10px 4%;
+    color: #ededed;
+    box-shadow: 0px 0 0px 0.5px #FFD700;
+}
+
+header > .cabecalho{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header a{
+    color: #333333;
+    text-decoration: none;
+    display: inline-block;
+    transition: .2s;   
+}
+
+header a:hover{
+    color: #FFD700;
+    transform: scale(1.05);
+}
+
+header nav ul{
+    list-style-type: none;
+}
+
+header nav ul li{
+    display: inline-block;
+    padding: 0 40px;
+}
+
+header .btn-cliente{
+    margin-right: 20px;
+}
+
+
+/* .. */
+/* .. */
+/* .. */
+/* APRESENTAÇÃO */
+section.apresentation{
+    padding: 40px 4%;
+    box-shadow: 0px 0 0px 0.5px #FFD700;
+}
+
+section.apresentation .flex{
+    align-items: center;
+    justify-content: center;
+
+    gap: 90px;
+}
+
+.apresentation .titulo span{
+    color: #FFD700;
+}
+
+.apresentation h1{
+    font-size: 48px;
+    line-height: 40px;
+}
+
+.apresentation .txt-apresentacao p{
+    margin: 40px 0;
+    text-align: justify;
+}
+
+/* -- */
+/* EDITANDO A IMAGEM DA TELA */
+.apresentation .imagem-topo{
+    margin-bottom: 50px;
+}
+
+.apresentation .imagem-topo .fundo{
+    border: 0px;
+    width: 500px;
+    height: 507px;
+    background: #FFD700;
+    /* position: absolute; */
+    z-index: 0;
+    border-radius: 50px 10px 90px 30px;
+    margin-right: 100px;
+    margin-top: 100px;
+    background-image: linear-gradient(to bottom, #FFD700, #ddb900);
+}
+
+.apresentation .imagem-topo .fundo .cont{
+    display: none;
+}
+
+.apresentation .imagem-topo figure.fundo img{
+    position: absolute;
+    border-radius: 0px 10px 30px 10px;
+    margin-top: -80px;
+    margin-left: 20px;
+}
+
+
+/* .. */
+/* .. */
+/* .. */
+/* VENDEDORES */
+section.vendedores{
+    padding: 80px 4%;
+    box-shadow: 0px 0 0px 0.5px #FFD700;
+}
+
+section.vendedores .flex{
+    justify-content: space-around;
+    margin-top: 30px;
+}
+
+.img-vend{
+    width: 350px;
+    height: 460px;
+    background-color: #FFD700;
+    background-size: cover;
+    background-position: 100% 0%;
+    transition: 5s;
+    border-radius: 30px;
+    cursor: pointer;
+    position: relative;
+}
+
+.img-vend:hover{
+    background-position: 100% 100%;
+}
+
+.overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #0000008b;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    font-weight: 600;
+    color: #fff;
+    opacity: 0;
+    transition: .5s;
+}
+
+.overlay:hover{
+    opacity: 1;
+}
+
+
+/* .. */
+/* .. */
+/* .. */
+/* SOBRE A EMPRESA */
+section.quem-somos{
+    padding: 40px 4%;
+    margin-top: 100px;
+    box-shadow: 0px 0 0px 0.5px #FFD700;
+}
+
+section.quem-somos .flex{
+    align-items: center;
+    gap: 30px;
+}
+
+.quem-somos .txt-sobreEmpresa{
+    color: #333333;
+    margin-left: 100px;
+}
+
+.quem-somos .txt-sobreEmpresa h2{
+    font-size: 40px;
+    line-height: 40px;
+    margin-bottom: 30px;
+}
+
+.quem-somos .txt-sobreEmpresa h2 span{
+    color: #FFD700;
+    display: block;
+    margin-left: 170px;
+}
+
+.quem-somos .txt-sobreEmpresa p{
+    margin: 20px 0;
+    text-align: justify;
+    margin-left: 20px;
+}
+
+.btn-social button{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: none;
+    background-color: #FFD700;
+    font-size: 24px;
+    cursor: pointer;
+    margin: 0 5px;
+    transition: .2s;
+}
+
+.quem-somos .img-qmSomos img{
+    width: 17%;
+    border-radius: 30px;
+    margin-left: 10px;
+    margin-bottom: 100px;
+    position: absolute;
+}
+
+.quem-somos .img-qmSomos .fundo-qmSomos{
+    border: 0px;
+    width: 370px;
+    height: 467px;
+    /* position: absolute; */
+    z-index: 0;
+    border-radius: 200px 10px 30px 30px;
+    margin-left: 100px;
+    background-image: linear-gradient(to bottom, #333333, #FFD700);
+}
+
+.quem-somos .img-qmSomos figure.fundo-qmSomos img{
+    position: absolute;
+    margin-top: -40px;
+    margin-left: 20px;
+    width: 330px;
+    border-radius: 30px;
+    position: absolute;
+}
+
+.quem-somos .fundo-qmSomos .cont1{
+    display: none;
+}
+
+
+/* .. */
+/* ACOMPANHAMENTO CLIENTE */
+.quem-somos .txt-acomTitulo{
+    margin-top: 50px;
+    color: #333333;
+}
+
+.acompanhamentos-site .flex{
+    align-items: center;
+    justify-content: center;
+    justify-content: space-around;
+}
+
+.acompanhamentos-site .acompanhamento-box{
+    color: #FFD700;
+    background-color: #333333;
+    padding: 40px;
+    border: 2px ;
+    margin-top: 25px;
+    border-radius: 30px;
+    transition: .2s;
+}
+
+.acompanhamentos-site .acompanhamento-box:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 8px #FFD700;
+}
+
+.acompanhamentos-site .acompanhamento-box .icon-one{
+    font-size: 30px;
+    color: #FFD700;
+    margin-left: 35%;
+}
+
+.acompanhamentos-site .acompanhamento-box .icon-two{
+    font-size: 30px;
+    color: #FFD700;
+    margin-left: 40%;
+}
+
+.acompanhamentos-site .acompanhamento-box .icon-tree{
+    font-size: 30px;
+    color: #FFD700;
+    margin-left: 40%;
+}
+
+.acompanhamentos-site .acompanhamento-box .icon-four{
+    font-size: 30px;
+    color: #FFD700;
+    margin-left: 40%;
+}
+
+
+/* .. */
+/* .. */
+/* .. */
+/* IMOVEIS */
+section.imoveis{
+    padding: 40px 4%;
+    box-shadow: 0px 0 0px 0.5px #FFD700;
+    
+}
+
+section.imoveis .flex{
+    align-items: center;
+    justify-content: center;
+    justify-content: space-around;
+}
+
+.imoveis .anuncOne{
+    margin-top: 20px;
+}
+
+.imoveis .casa-img{
+    width: 10px;
+    position: absolute;
+}
+
+.imoveis .sobre-casa{
+    margin-left: 500px;
+    margin-top: 80px;
+}
+
+.imoveis .sobre-casa i{
+    color: #45e969;
+}
+
+.imoveis .sobre-casa .buttons a{
+    text-decoration: none;
+    color: #FFD700;
+    margin-left: 15px;
+}
+
+.imoveis .sobre-casa button{
+    margin-top: 40px;
+    padding: 10px 40px;
+    font-size: 18px;
+    font-weight: 400;
+    background-color: #45e969;
+    /* tirando as bordas */
+    border: 0;
+    /* deixando as bordas arredondadas */
+    border-radius: 30px;
+    /* mudança de cursos */
+    cursor: pointer;
+    transition: .2s;
+}
+
+
+
+
+/* .. */
+/* .. */
+/* .. */
+/* FORMULARIO */
+section.formulario{
+    padding: 40px 4%;
+    align-items: center;
+}
+
+form{
+    max-width: 500px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 40px;
+}
+
+form input, form textarea{
+    width: 100%;
+    background-color: #333333;
+    border: 0;
+    outline: 0;
+    padding: 20px 15px;
+    border-radius: 10px;
+    color: #FFD700;
+    font-size: 15px;
+}
+
+form input::placeholder, form textarea::placeholder{
+    color: #FFD700;
+}
+
+form textarea {
+    resize: none;
+    max-height: 250px;
+}
+
+form .btn-enviar{
+    margin-top: 20px;
+    text-align: center;
+}
+
+form .btn-enviar input{
+    width: 200px;
+    background-color: #FFD700;
+    color: #333333;
+    font-weight: 300;
+    cursor: pointer;
+    font-size: 18px;
+    transition: .2s;
+}
+
+
+
+/* .. */
+/* .. */
+/* .. */
+/* RODAPÉ */
+footer{
+    padding: 30px 4%;
+    box-shadow: 0 0 20px 0.2px #333333;
+}
+
+footer .flex{
+    justify-content: space-between;
+}
+
+footer .line-footer{
+    padding: 20px 0;
+}
+
+.borda{
+    border-top: 2px solid #FFD700;
+}
+
+footer .line-footer p i{
+    color: #333333;
+    font-size: 22px;
+}
+
+footer .line-footer p a{
+    color: #333333;
+}

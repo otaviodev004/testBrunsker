@@ -1,0 +1,168 @@
+/* ESTILO GERAL */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lexend Deca', sans-serif;
+    font-family: 'Oswald', sans-serif;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+/* deixando o scroll suavisado */
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: #F7F7F7;
+    height: 100vh;
+}
+
+main{
+    margin-top: 10%;
+}
+
+.flex{
+    display: flex;
+}
+
+.btn-cliente button{
+    padding: 10px 40px;
+    font-size: 18px;
+    font-weight: 400;
+    background-color: #FFD700;
+    /* tirando as bordas */
+    border: 0;
+    /* deixando as bordas arredondadas */
+    border-radius: 30px;
+    /* mudança de cursos */
+    cursor: pointer;
+    transition: .2s;
+}
+
+button:hover, form .btn-enviar input:hover{
+    box-shadow: 0px 0px 8px #917800;
+    transform: scale(1.05)
+}
+
+h2.titulo{
+    color: #FFD700;
+    font-size: 40px;
+    text-align: center;
+}
+
+h2.titulo span{
+    color: #333333;
+}
+
+
+/* .. */
+/* .. */
+/* .. */
+/* CABEÇALHO DO SITE */
+header{
+    padding: 10px 4%;
+    color: #ededed;
+    box-shadow: 0px 0 0px 0.5px #FFD700;
+}
+
+header > .cabecalho{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header a{
+    color: #333333;
+    text-decoration: none;
+    display: inline-block;
+    transition: .2s;   
+}
+
+header a:hover{
+    color: #FFD700;
+    transform: scale(1.05);
+}
+
+header nav ul{
+    list-style-type: none;
+}
+
+header nav ul li{
+    display: inline-block;
+    padding: 0 40px;
+}
+
+header .btn-cliente{
+    margin-right: 20px;
+}
+
+
+/* .. */
+/* .. */
+/* .. */
+/* FORMULARIO */
+section.formulario{
+    padding: 40px 4%;
+    align-items: center;
+}
+
+form{
+    max-width: 500px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 40px;
+}
+
+form input{
+    width: 100%;
+    background-color: #333333;
+    border: 0;
+    outline: 0;
+    padding: 20px 15px;
+    border-radius: 10px;
+    color: #FFD700;
+    font-size: 15px;
+}
+
+form input::placeholder{
+    color: #FFD700;
+}
+
+form .btn-enviar{
+    margin-top: 20px;
+    text-align: center;
+}
+
+form .btn-enviar .cadastrar{
+    margin-left: 20px;
+}
+
+form .btn-enviar input{
+    width: 200px;
+    background-color: #FFD700;
+    color: #333333;
+    font-weight: 300;
+    cursor: pointer;
+    font-size: 18px;
+    transition: .2s;
+}
+
+form a{
+    color: #333333;
+    text-decoration: none;
+    display: inline-block;
+    transition: .2s;   
+}
+
+form a:hover{
+    color: #FFD700;
+    transform: scale(1.05);
+}
+
+main{
+    margin-top: 10%;
+}
